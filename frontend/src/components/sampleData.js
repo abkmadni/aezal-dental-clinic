@@ -1,0 +1,241 @@
+export const sampleAppointments = [
+  {
+    id: 1,
+    patient: "Usman Tariq",
+    date: "2025-05-10",
+    time: "10:30 AM",
+    doctor: "Dr. Sarah Khan",
+    status: "Scheduled",
+  },
+  {
+    id: 2,
+    patient: "Bilal Ahmed",
+    date: "2025-05-12",
+    time: "02:00 PM",
+    doctor: "Dr. Sarah Khan",
+    status: "Scheduled",
+  },
+  {
+    id: 3,
+    patient: "Babar Ali",
+    date: "2025-05-15",
+    time: "11:00 AM",
+    doctor: "Dr. Faisal Ali",
+    status: "Pending",
+  },
+  {
+    id: 4,
+    patient: "Ali Raza",
+    date: "2025-05-08",
+    time: "01:30 PM",
+    doctor: "Dr. Sarah Khan",
+    status: "Completed",
+  },
+  {
+    id: 5,
+    patient: "Babar Ali",
+    date: "2025-05-20",
+    time: "03:00 PM",
+    doctor: "Dr. Faisal Ali",
+    status: "Pending",
+  },
+  {
+    id: 6,
+    patient: "Zainab Khalid",
+    date: "2025-05-21",
+    time: "12:00 PM",
+    doctor: "Dr. Sarah Khan",
+    status: "Scheduled",
+  },
+  {
+    id: 7,
+    patient: "Danish Ayaz",
+    date: "2025-05-22",
+    time: "09:00 AM",
+    doctor: "Dr. Faisal Ali",
+    status: "Scheduled",
+  },
+];
+
+
+export const sampleTreatments = [
+  {
+    title: "Scaling",
+    desc: "Removes plaque and tartar buildup to keep your teeth clean and gums healthy.",
+    image: "/scaling.jpg",
+    price: "PKR 2,500 (10% Off)",
+  },
+  {
+    title: "Polishing",
+    desc: "Smoothens tooth surfaces for a brighter and shinier smile.",
+    image: "/teeth-polish.jpeg",
+    price: "PKR 1,500 (10% Off)",
+  },
+  {
+    title: "Root Canal Treatment",
+    desc: "Removes infected pulp and saves your natural tooth.",
+    image: "/root-canal.jpg",
+    price: "PKR 8,000",
+  },
+  {
+    title: "Tooth Extraction",
+    desc: "Painless removal of severely damaged or infected teeth.",
+    image: "/tooth-extraction.avif",
+    price: "PKR 3,000",
+  },
+  {
+    title: "ClearPath® Aligners",
+    desc: "Braceless solution to align your teeth discreetly and comfortably.",
+    image: "/clearpath-aligner.webp",
+    price: "PKR 120,000 (Complete Set)",
+  },
+];
+
+export const treatmentHistory = [
+  {
+    id: 1,
+    date: "2025-04-10",
+    type: "Scaling",
+    doctor: "Dr. Sana Khalid",
+    notes: "Patient had mild tartar buildup. Completed full scaling in one session.",
+    totalPrice: 2500,
+  },
+  {
+    id: 2,
+    date: "2025-02-22",
+    type: "Polishing",
+    doctor: "Dr. Hassan Malik",
+    notes: "Performed polishing after scaling. Patient advised to avoid staining foods.",
+    totalPrice: 1500,
+  },
+  {
+    id: 3,
+    date: "2024-11-15",
+    type: "Root Canal Treatment",
+    doctor: "Dr. Ayesha Tariq",
+    notes: "Treated lower left molar. Prescribed antibiotics for 5 days.",
+    totalPrice: 8000,
+  },
+  {
+    id: 4,
+    date: "2024-08-03",
+    type: "Tooth Extraction",
+    doctor: "Dr. Imran Shaikh",
+    notes: "Extracted wisdom tooth due to impaction. Healing was uneventful.",
+    totalPrice: 3000,
+  },
+  {
+    id: 5,
+    date: "2024-05-20",
+    type: "ClearPath® Aligners",
+    doctor: "Dr. Areeba Zafar",
+    notes: "Initial assessment and mold taken. First set of aligners issued.",
+    totalPrice: 120000,
+  },
+];
+
+
+export const samplePatients = [
+  {
+    name: "Ali Raza",
+    email: "ali.raza@example.com",
+    phone: "03121234567",
+    password: "$2a$10$9kjf08JKHjs8dfS8as98dH.asdhfksdjfhsdfGJHG",
+    role: "patient",
+    createdAt: new Date("2024-11-05T10:00:00Z"),
+  },
+  {
+    name: "Fatima Noor",
+    email: "fatima.noor@example.com",
+    phone: "03009876543",
+    password: "$2a$10$s9hd9fSdf98dsfJKsjf09sdf8GhjkdSjdf98sdfg",
+    role: "patient",
+    createdAt: new Date("2025-01-18T14:30:00Z"),
+  },
+  {
+    name: "Usman Tariq",
+    email: "usman.tariq@example.com",
+    phone: "03332233445",
+    password: "$2a$10$sdjfhSDFJ83fksJDF8sd09fg.sdfJKHSdf98sjdf",
+    role: "patient",
+    createdAt: new Date("2024-09-25T09:15:00Z"),
+  },
+  {
+    name: "Ayesha Khan",
+    email: "ayesha.khan@example.com",
+    phone: "03014567890",
+    password: "$2a$10$sdf08sdf7SDFJsdhf897sdgF.sdfhjksdf78sdg",
+    role: "patient",
+    createdAt: new Date("2025-02-10T11:45:00Z"),
+  },
+  {
+    name: "Bilal Ahmed",
+    email: "bilal.ahmed@example.com",
+    phone: "03451122334",
+    password: "$2a$10$98sd0fsdfJHSDF87sdg.8sdfjkhsdf09s8dfg",
+    role: "patient",
+    createdAt: new Date("2024-07-12T08:20:00Z"),
+  },
+  {
+    name: "Hira Saeed",
+    email: "hira.saeed@example.com",
+    phone: "03219988776",
+    password: "$2a$10$F87sdf9sdg9sdfJHSDf97sdgf.sdfjkhsdf78sdg",
+    role: "patient",
+    createdAt: new Date("2025-03-04T16:10:00Z"),
+  },
+  {
+    name: "Zainab Fatima",
+    email: "zainab.fatima@example.com",
+    phone: "03133344556",
+    password: "$2a$10$7sdf09sdfJKSDF897sdg8sdf.sdfjkhsdf08sdfg",
+    role: "patient",
+    createdAt: new Date("2024-10-01T12:00:00Z"),
+  },
+  {
+    name: "Babar Ali",
+    email: "babar.ali@example.com",
+    phone: "03127654321",
+    password: "$2a$10$abc123ABCdef456DEFghi789GHIjkl000xyz",
+    role: "patient",
+    createdAt: new Date("2024-08-20T13:40:00Z"),
+  },
+  {
+    name: "Zainab Khalid",
+    email: "zainab.khalid@example.com",
+    phone: "03005566778",
+    password: "$2a$10$ZKpass123example098encryptedValue",
+    role: "patient",
+    createdAt: new Date("2024-12-03T15:00:00Z"),
+  },
+  {
+    name: "Danish Ayaz",
+    email: "danish.ayaz@example.com",
+    phone: "03228877665",
+    password: "$2a$10$DApass321sampleEncryptedHash321pass",
+    role: "patient",
+    createdAt: new Date("2025-04-22T10:10:00Z"),
+  },
+];
+
+
+export const staffMembers = [
+  {
+    id: 1,
+    name: "Babar Ali",
+    email: "babar.ali@aezalclinic.pk",
+    role: "Admin",
+  },
+  {
+    id: 2,
+    name: "Rimsha Khan",
+    email: "rimsha.khan@aezalclinic.pk",
+    role: "Receptionist",
+  },
+  {
+    id: 3,
+    name: "Mehdi Raza",
+    email: "mehdi.raza@aezalclinic.pk",
+    role: "Receptionist",
+  },
+];
