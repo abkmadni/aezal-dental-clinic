@@ -141,41 +141,6 @@ For production (Vercel), add the same keys in your project settings under **Envi
 
 ---
 
-## Project Structure
-
-```
-root/
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   │   └── dbConfig.js
-│   │   ├── controllers/
-│   │   │   ├── appointmentController.js
-│   │   │   ├── treatmentController.js
-│   │   │   └── userController.js
-│   │   ├── middleware/
-│   │   │   ├── verifyToken.js
-│   │   │   └── roleMiddleware.js
-│   │   ├── models/
-│   │   │   ├── Appointment.js
-│   │   │   ├── Treatment.js
-│   │   │   └── User.js
-│   │   ├── routes/
-│   │   │   ├── appointmentRoutes.js
-│   │   │   ├── treatmentRoutes.js
-│   │   │   └── userRoutes.js
-│   │   └── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   └── package.json
-├── vercel.json
-└── README.md
-```
-
----
-
 ## Deployment
 
 This project is configured to deploy both frontend and backend on Vercel:
