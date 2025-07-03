@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import Login from './components/Login';
@@ -10,6 +11,21 @@ import Dashboard from "./components/Dashboard";
 import Unauthorized from './components/Unauthorized';
 
 function App() {
+
+  useEffect(() => {
+    // Dynamically inject the Convai script once when App mounts
+    const script = document.createElement('script');
+    script.src = "https://unpkg.com/@elevenlabs/convai-widget-embed";
+    script.async = true;
+    script.type = "text/javascript";
+    document.body.appendChild(script);
+
+    return () => {
+      // clean up if App ever unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <Router>
       <Routes>
@@ -55,6 +71,9 @@ function App() {
           className="h-14"
         />
       </a>
+
+      {/* Convai chat widget: */}
+      <elevenlabs-convai agent-id="agent_01jz7gfc88epka76jby40c6468" />
 
 
     </Router>
